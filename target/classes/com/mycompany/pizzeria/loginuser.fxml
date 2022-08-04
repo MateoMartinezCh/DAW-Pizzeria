@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" fx:id="panel" prefHeight="272.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pizzeria.LoginuserController">
+   <children>
+      <GridPane layoutX="136.0" layoutY="101.0" AnchorPane.rightAnchor="60.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#pulso7" prefHeight="45.0" prefWidth="122.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#pulso8" prefHeight="45.0" prefWidth="122.0" text="8" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#pulso9" prefHeight="45.0" prefWidth="122.0" text="9" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#pulso4" prefHeight="45.0" prefWidth="122.0" text="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#pulso5" prefHeight="45.0" prefWidth="122.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#pulso6" prefHeight="45.0" prefWidth="122.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#pulso1" prefHeight="45.0" prefWidth="122.0" text="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#pulso2" prefHeight="45.0" prefWidth="122.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#pulso3" prefHeight="45.0" prefWidth="122.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#pulso0" prefHeight="45.0" prefWidth="122.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="botonaceptar" mnemonicParsing="false" onAction="#aceptar" prefHeight="45.0" prefWidth="122.0" text="Aceptar" GridPane.rowIndex="3" />
+            <Button fx:id="botoncancelar" mnemonicParsing="false" onAction="#cancelar" prefHeight="45.0" prefWidth="122.0" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <PasswordField fx:id="campotexto" layoutX="139.0" layoutY="34.0" />
+      <Label layoutX="147.0" layoutY="6.0" text="Introduzca su contraseña" />
+   </children>
+</AnchorPane>
